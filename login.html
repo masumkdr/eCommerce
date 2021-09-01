@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Masum's eCommerce</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Latest compiled JavaScript -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <script src="background.js"></script> -->
+	<!-- <script src="quotes.js"></script> -->
+</head>
+
+<body style="background-color: #F7F7F7;">
+
+	<div class="container loginDiv mb-5">
+	
+		<div class="card orderCard">
+			<div class="card-body m-4 allItems">
+				<h5 class="text-center mb-5">Turnover | Creative Courses for HTML,CSS,JavaScript,React,React-Native</h5>
+
+				<div class="mb-4 nameSection">
+					<label for="loginName" class="form-label loginLabel">Full Name</label>
+					<div class="input-group">
+						<input type="text" class="form-control required" id="loginName"
+							aria-describedby="loginName" placeholder=''>
+					</div>
+					<p class="error errorStyle mt-2"></p>
+				</div>
+
+				<div class="mb-4">
+					<label for="email" class="form-label loginLabel">Email
+						address</label>
+					<div class="input-group">
+						<input type="email" class="form-control required" id="loginEmail"
+							aria-describedby="loginEmail" placeholder=''>
+					</div>
+					<p class="error errorStyle mt-2"></p>
+				</div>
+				
+				<div class="mb-4">
+					<label for="password" class="form-label loginLabel">Password</label>
+					<div class="input-group">
+						<input type="password" class="form-control required" id="password"
+							aria-describedby="password" placeholder="">
+					</div>
+					<p class="error errorStyle mt-2"></p>
+				</div>
+
+				<div class="mb-4 confirmPasswordSection">
+					<label for="confirmPassword" class="form-label loginLabel">Confirmed Password</label>
+					<div class="input-group">
+						<input type="password" class="form-control required" id="confirmPassword"
+							aria-describedby="confirmassword" placeholder="">
+					</div>
+					<p class="error errorStyle mt-2"></p>
+				</div>
+
+				<div class="checkboxSection">
+					<div class="form-check mb-4">
+						<input class="form-check-input" type="checkbox" value="" id="signInAgree">
+						<label class="form-check-label text-muted ml-2 pt-1" for="signInAgree">
+							I agree to receive instructional and promotional emails(optional)
+						</label>
+					</div>
+	
+					<div class="form-check mb-4">
+						<input class="form-check-input" type="checkbox" value="" id="signInPrivacy">
+						<label class="form-check-label text-muted ml-2 pt-1">By selecing this checkbox, I agree to Turnover | Creative
+							Programming and Design Courses's
+							<a class="addOptional">Terms of Use</a> & <a class="addOptional">Privacy Policy</a>, and the <a
+								class="addOptional">Terms of Use</a> & <a class="addOptional">Privacy Policy</a> of the
+							course platform.</label>
+					</div>
+					<p class="error errorStyle"></p>
+				</div>
+				
+
+				<div class="mb-4 text-center">
+					<button class="btn btn-secondary rounded-pill signInBtn">Sign Up</button>
+				</div>
+
+				<div class="text-center forgotSection" style="display:none">
+					<a class="forgotPassBtn">Forgot Password?</a>
+				</div>
+				
+			</div>
+			
+			<div class="btn-group" role="group" aria-label="Basic outlined example">
+				<button type="button" class="btn btn-outline-primary btnLogin loginAccount" href=""><i class="fa fa-user-circle" aria-hidden="true"></i> <span class="btnText createAccountText">Have Account? Sign In</span></button>
+				<button type="button" class="btn btn-outline-primary btnLogin loginWithGoogle"><i class="fa fa-google" aria-hidden="true"></i> <span class="btnText ">Login With Google</span></button>
+			  </div>
+		</div>
+	</div>
+
+
+
+
+	
+
+	<footer class="footer">
+		<p class="pt-4">© Turnover | Turnover Programming and Design Courses 2021</p>
+	</footer>
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="js/courses.js"></script>
+	<script src="js/store.js"></script>
+	<script src="js/ui.js"></script>
+	<script src="js/nav.js"></script>
+	<script src="js/login.js"></script>
+</body>
+
+</html>

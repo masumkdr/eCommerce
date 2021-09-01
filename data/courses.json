@@ -1,0 +1,88 @@
+{
+    "courses": [
+        {
+            "id": "1",
+            "name": "The Expert HTML Course",
+            "image": "html.png",
+            "category": "Web Development",
+            "description": "Expert HTML course for All",
+            "author": {
+                "name": "MH Masum",
+                "image": "masum.png"
+            },
+            "price": 28.50
+        },
+        {
+            "id": "2",
+            "name": "The Fundamental CSS",
+            "image": "css.jpg",
+            "category": "Web Development",
+            "description": "Fundamental Css for begineerers",
+            "author": {
+                "name": "KH Humayun",
+                "image": "humayun.png"
+            },
+            "price": 20.50
+        },
+        {
+            "id": "3",
+            "name": "The Creative Javascript",
+            "image": "javascript.jpg",
+            "category": "Web Development",
+            "description": "Creative javascript for Experts",
+            "author": {
+                "name": "MH Masum",
+                "image": "masum.png"
+            },
+            "price": 39.50
+        },
+        {
+            "id": "4",
+            "name": "HTML, CSS & Javascript Bundle",
+            "image": "html_css.png",
+            "category": "Web Development",
+            "description": "The bundle course with HTML, CSS & Javascripts",
+            "author": {
+                "name": "MH Masum",
+                "image": "masum.png"
+            },
+            "price": 40.50
+        },
+        {
+            "id": "5",
+            "name": "React for Beginerers",
+            "image": "react.png",
+            "category": "Full Stack Web",
+            "description": "The begineerers course for React wtih Redux",
+            "author": {
+                "name": "MH Masum",
+                "image": "masum.png"
+            },
+            "price": 30.50
+        },
+        {
+            "id": "6",
+            "name": "React Native for Begineerers",
+            "image": "react_native.png",
+            "category": "App Development",
+            "description": "React native course with basic to advance",
+            "author": {
+                "name": "MH Masum",
+                "image": "masum.png"
+            },
+            "price": 25.50
+        },
+        {
+            "id": "7",
+            "name": "Full Stack Web Development",
+            "image": "full_stack.jpg",
+            "category": "Full Stack Web",
+            "description": "Full Stack web development with HTML, CSS, Javascript, React & React-Native",
+            "author": {
+                "name": "MH Masum",
+                "image": "masum.png"
+            },
+            "price": 59.50
+        }
+    ]
+}

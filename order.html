@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Masum's eCommerce</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Latest compiled JavaScript -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <script src="background.js"></script> -->
+	<!-- <script src="quotes.js"></script> -->
+</head>
+
+<body style="background-color: #f5f6f7;">
+
+
+	<div class="container my-5">
+		<div class="row fullOrder">
+			<div class="col-md-7 pt-5">
+				<h6 class="text-bold">Order Summary</h6>
+				<p><span class="text-danger pt-1">*</span><i class="text-muted">required</i></p>
+
+				<div class="card orderCard shadow-sm">
+					<div class="card-body cartCourses">
+
+					</div>
+					<div class="mx-4">
+						<div>
+							<div>
+								<a href="#" class="couponbtn expandNext">Add Coupon Code</a>
+							</div>
+
+							<div class="input-group mb-3 couponInput">
+								<input type="text" class="form-control required couponText"
+									placeholder="Enter Your Coupon" aria-label="Enter Your Coupon"
+									aria-describedby="button-addon2" id="couponCode">
+								<button class="btn btn-outline-secondary btnCouponApply" type="button"
+									id="button-addon2" disabled>Apply</button>
+							</div>
+							<p class="error errorStyle"></p>
+						</div>
+						<hr>
+						<div class="d-flex justify-content-between text-bold mt-3 totalBill couponProp">
+							<p>Coupon Discount<span class="cCode"></span></p>
+							<p class="disAmount">$0.00</p>
+						</div>
+						<div class="d-flex justify-content-between text-bold mb-3 totalBill">
+							<p>Total Bill(USD)</p>
+							<p class="totalAmount">$0.00</p>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- login section -->
+				<div class="mt-5">
+					<h6 class="text-bold">Student login details</h6>
+					<p class="text-muted">Create an account to access materials related to your purchase</p>
+					<div class="card orderCard shadow-sm">
+						<div class="card-body studentLogin">
+							<label for="email" class="form-label"><span class="text-danger">*</span>Email
+								address</label>
+							<div class="input-group mb-3">
+								<input type="email" class="form-control required" id="loginEmail"
+									aria-describedby="loginEmail" placeholder="name@example.com">
+							</div>
+							<p class="error errorStyle"></p>
+
+							<label for="name" class="form-label"><span class="text-danger">*</span>Name</label>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control required" id="loginName"
+									aria-describedby="loginName" placeholder="Jhon Doe">
+							</div>
+							<p class="error errorStyle"></p>
+
+							<label for="password" class="form-label"><span class="text-danger">*</span>Password</label>
+							<div class="input-group mb-3">
+								<input type="password" class="form-control required" id="password"
+									aria-describedby="password" placeholder="Password">
+							</div>
+							<p class="error errorStyle"></p>
+
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="signInAgree">
+								<label class="form-check-label text-muted ml-2 pt-1" for="signInAgree">
+									I agree to receive instructional and promotional emails(optional)
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- payment gateway section -->
+				<div class="mt-5">
+					<h6 class="text-bold">Payment Information</h6>
+					<p class="text-muted"><i class="fa fa-lock"></i> This is a secure 128-bit SSL encrypted payment</p>
+					<a class="btn btn-warning rounded-pill px-5 gpay mb-3" href="https://pay.google.com/"
+						target="_blank"><i class="fa fa-google"></i>
+						Pay</a>
+					<div class="card orderCard shadow-sm">
+						<div class="card-body studentLogin">
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="paypal" id="paypal">
+								<label class="form-check-label ml-2 pt-1" for="paypal">
+									<img src="images/paypal_logo.png" height="30" width="50%" alt="paypal" />
+								</label>
+							</div>
+
+							<!-- PAYPAL PAYMENT OPTION -->
+
+							<div class="my-3 paypalDiv" style="display: none;">
+								<div class="p-3">
+									<label for="country" class="form-label"><span
+											class="text-danger">*</span>Country</label>
+									<div class="input-group mb-3">
+										<select class="form-select form-control" aria-label="Default select example">
+											<option selected>Bangladesh</option>
+											<option value="1">Unisted States of America</option>
+											<option value="2">UK</option>
+											<option value="3">Germany</option>
+											<option value="4">Singapore</option>
+											<option value="5">India</option>
+											<option value="6">UAE</option>
+											<option value="7">Saudi Arabia</option>
+											<option value="8">Australia</option>
+											<option value="9">Malaysia</option>
+											<option value="10">France</option>
+											<option value="11">China</option>
+										</select>
+									</div>
+									<a class="btn paypalBtn rounded-pill" href="https://www.paypal.com/"
+										target="_blank"><img type="button" src="images/paypal-btn.jpg" height="50"
+											width="200px" alt="paypal"></a>
+									<p class="textinfo">Where applicable, the final sales tax may be added after you
+										complete the transaction.</p>
+								</div>
+							</div>
+
+							<!-- credit card radio -->
+							<div class="form-check mt-3">
+								<input class="form-check-input" type="radio" name="credtiCard" id="credtiCard"
+									style="font-size: 24px">
+								<label class="form-check-label ml-2 pt-1" for="flexRadioDefault2">
+									<p class="text-bold">Credit Card <img src="images/credit-card.jpg" height="30"
+											width="50%" alt="credit card" /></p>
+								</label>
+							</div>
+
+							<!-- credit card PAYMENT OPTION -->
+							<div class="mt-3 creditDiv" style="display: none;">
+								<div class="p-3">
+									<label for="name of card" class="form-label"><span class="text-danger">*</span>Name
+										On Card</label>
+									<div class="input-group mb-3">
+										<input type="text" class="form-control required" id="nameoncard"
+											aria-describedby="nameoncard" placeholder="Jhone Doe">
+									</div>
+									<p class="error errorStyle"></p>
+
+									<label for="name" class="form-label"><span class="text-danger">*</span>Card
+										Number</label>
+									<div class="input-group mb-3">
+										<input type="text" class="form-control required" id="cardNumber"
+											aria-describedby="cardNumber" placeholder="1234 2342 4563 5671"
+											maxlength="19">
+									</div>
+									<p class="error errorStyle"></p>
+
+									<div class="d-flex justify-content-between">
+										<div>
+											<label for="expiration" class="form-label"><span
+													class="text-danger">*</span>Expiration Date</label>
+											<div class="input-group mb-3">
+												<input type="text" class="form-control required" id="expiration"
+													aria-describedby="expiration" placeholder="MM / YY" maxlength="19">
+											</div>
+											<p class="error errorStyle"></p>
+										</div>
+										<div>
+											<label for="cvc" class="form-label"><span class="text-danger">*</span>CVC
+												Code <a><i class="fa fa-question-circle" data-toggle="modal"
+														data-target="#cvcModal" aria-hidden="true"></i></a>
+
+												<div id="cvcModal" class="modal come-from-modal" role="dialog">
+													<div class="modal-dialog">
+														<!-- Modal content-->
+														<div class="modal-content">
+															<img src="images/cvc.png" width="400" alt="cvc" />
+														</div>
+													</div>
+												</div>
+
+											</label>
+											<div class="input-group">
+												<input type="number" class="form-control required" id="cvc"
+													aria-describedby="cvc" placeholder="CVC">
+											</div>
+											<p class="error errorStyle mt-1"></p>
+										</div>
+									</div>
+
+
+
+
+								</div>
+								<div class="form-check ml-3 pb-4">
+									<input class="form-check-input" type="checkbox" value="" id="saveCard">
+									<label class="form-check-label text-muted ml-3 pt-1" for="saveCard">
+										Save my billing info for future purchase</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<!-- Billing section -->
+				<div class="mt-5 billingSection" style="display:none">
+					<h6 class="text-bold">Billing Details</h6>
+					<div class="card orderCard shadow-sm">
+						<div class="card-body BillingDetails">
+							<div class="mb-2">
+								<a class="addOptional addBusiness expandNext"><i class="fa fa-plus-square"
+										aria-hidden="true"></i>
+									Add
+									Business Name</a>
+							</div>
+
+							<div style="display: none;">
+								<label for="busName" class="form-label">Bussiness Name(Optional)</label>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control" id="busName" aria-describedby="busName"
+										placeholder="Add business Name">
+								</div>
+							</div>
+
+							<div>
+								<label for="biilingCountry" class="form-label"><span
+										class="text-danger">*</span>Country</label>
+								<div class="input-group mb-3">
+									<select class="form-select form-control" aria-label="Default select example"
+										id="country">
+										<option selected>Bangladesh</option>
+										<option value="1">Unisted States of America</option>
+										<option value="2">UK</option>
+										<option value="3">Germany</option>
+										<option value="4">Singapore</option>
+										<option value="5">India</option>
+										<option value="6">UAE</option>
+										<option value="7">Saudi Arabia</option>
+										<option value="8">Australia</option>
+										<option value="9">Malaysia</option>
+										<option value="10">France</option>
+										<option value="11">China</option>
+									</select>
+								</div>
+							</div>
+
+							<div>
+								<label for="street" class="form-label"><span class="text-danger">*</span>Street
+									Address</label>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control required" id="street"
+										aria-describedby="street" placeholder="">
+								</div>
+								<p class="error errorStyle"></p>
+							</div>
+
+
+							<div class="mb-2">
+								<a class="addOptional addAddrsess expandNext"><i class="fa fa-plus-square"
+										aria-hidden="true"></i>
+									Add address line 2</a>
+							</div>
+							<div style="display: none;">
+								<label for="street2" class="form-label">Street Address2(Optional)</label>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control" id="street2" aria-describedby="street2"
+										placeholder="Area/Apartment/floor/suite">
+								</div>
+							</div>
+
+							<div class="d-flex justify-content-left">
+								<div>
+									<label for="city" class="form-label"><span class="text-danger">*</span>City</label>
+									<div class="input-group mb-3">
+										<input type="text" class="form-control required" id="city"
+											aria-describedby="city" placeholder="">
+									</div>
+									<p class="error errorStyle"></p>
+								</div>
+
+								<div>
+									<div class="mt-4 ml-4">
+										<a class="addOptional addState expandNext"><i class="fa fa-plus-square"
+												aria-hidden="true"></i> Add state, province, region</a>
+									</div>
+									<div style="display: none;" class="ml-4 marginState">
+										<label for="state" class="form-label">State, Province, or Region
+											(optional)</label>
+										<div class="input-group">
+											<input type="text" class="form-control" id="state" aria-describedby="state"
+												placeholder="">
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div>
+								<label for="postal" class="form-label"><span class="text-danger">*</span>Postal
+									Code</label>
+								<div class="input-group mb-3">
+									<input type="number" class="form-control required" id="postal"
+										aria-describedby="postal" placeholder="999">
+								</div>
+								<p class="error errorStyle"></p>
+							</div>
+
+
+							<div class="form-check">
+								<input class="form-check-input" checked type="checkbox" value="" id="deliverAddress">
+								<label class="form-check-label text-muted ml-2 pt-1" for="deliverAddress">
+									Delivery address same as billing
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Delivery Address section -->
+				<div class="mt-5 deliverySection" style="display:none">
+					<h6 class="text-bold">Delivery Address</h6>
+					<div class="card orderCard shadow-sm">
+						<div class="card-body BillingDetails">
+							<div>
+								<label for="biilingCountry" class="form-label"><span
+										class="text-danger">*</span>Country</label>
+								<div class="input-group mb-3">
+									<select class="form-select form-control" aria-label="Default select example"
+										id="deliCountry">
+										<option selected>Bangladesh</option>
+										<option value="1">Unisted States of America</option>
+										<option value="2">UK</option>
+										<option value="3">Germany</option>
+										<option value="4">Singapore</option>
+										<option value="5">India</option>
+										<option value="6">UAE</option>
+										<option value="7">Saudi Arabia</option>
+										<option value="8">Australia</option>
+										<option value="9">Malaysia</option>
+										<option value="10">France</option>
+										<option value="11">China</option>
+									</select>
+								</div>
+							</div>
+
+							<div>
+								<label for="deliStreet" class="form-label"><span class="text-danger">*</span>Street
+									Address</label>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control required" id="deliStreet"
+										aria-describedby="deliStreet" placeholder="">
+								</div>
+								<p class="error errorStyle"></p>
+							</div>
+
+
+							<div class="mb-2">
+								<a class="addOptional addDeliAddrsess expandNext"><i class="fa fa-plus-square"
+										aria-hidden="true"></i> Add address line 2</a>
+							</div>
+							<div style="display: none;">
+								<label for="deliStreet2" class="form-label">Street Address2(Optional)</label>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control" id="deliStreet2"
+										aria-describedby="deliStreet2" placeholder="Area/Apartment/floor/suite">
+								</div>
+							</div>
+
+							<div class="d-flex justify-content-left">
+								<div>
+									<label for="deliCity" class="form-label"><span
+											class="text-danger">*</span>City</label>
+									<div class="input-group mb-3">
+										<input type="text" class="form-control required" id="deliCity"
+											aria-describedby="deliCity" placeholder="">
+									</div>
+									<p class="error errorStyle"></p>
+
+								</div>
+
+								<div>
+									<div class="mt-4 ml-4">
+										<a class="addOptional addDeliState expandNext"><i class="fa fa-plus-square"
+												aria-hidden="true"></i> Add state, province, region</a>
+									</div>
+									<div style="display: none;" class="ml-4 marginState">
+										<label for="deliState" class="form-label">State, Province, or Region
+											(optional)</label>
+										<div class="input-group">
+											<input type="text" class="form-control" id="deliState"
+												aria-describedby="deliState" placeholder="">
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div>
+								<label for="deliPostal" class="form-label"><span class="text-danger">*</span>Postal
+									Code</label>
+								<div class="input-group mb-3">
+									<input type="number" class="form-control required" id="deliPostal"
+										aria-describedby="deliPostal" placeholder="999">
+								</div>
+								<p class="error errorStyle"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Submit button section -->
+				<div class="mt-5">
+					<button class="btn btn-secondary rounded-pill finalSubmit" disabled> BUY NOW <span
+							class="totalAmountBtn">$0.00</span></button>
+
+					<div id="emailExistModal" class="modal fade m-2" role="dialog">
+						<div class="modal-dialog">
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title">Modal title</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close">x</button>
+								</div>
+								<div class="modal-body">
+									<p class="mb-3">This email address already exist, Please sign in to purchase or
+										access your courses. Or Try with another email.<p>
+									<a href="login.html" class="btn btn-block btn-warning rounded-pill"> Sign In</a>
+								</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-outline-primary" data-dismiss="modal">Try Again</button>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+					<p class="text-muted mt-3 text-center">By completing this purchase, I agree to Turnover | Creative
+						Programming and Design Courses's
+						<a class="addOptional">Terms of Use</a> & <a class="addOptional">Privacy Policy</a>, and the <a
+							class="addOptional">Terms of Use</a> & <a class="addOptional">Privacy Policy</a> of the
+						course platform.</p>
+				</div>
+
+			</div>
+
+			<!-- what you get from this coruse secton -->
+			<div class="col-md-5 pt-5">
+				<h6 class="text-bold ml-4 mt-5">What you will get from this coruse?</h6>
+
+				<ul class="listitem">
+					<li><i class="fa fa-check-circle" aria-hidden="true"></i> <span class="listSingle">Learn to become a
+							professional Front End Web Developer.</span></li>
+					<li><i class="fa fa-check-circle" aria-hidden="true"></i> <span class="listSingle"> Build out a
+							portofolio with projects ready to get you hired.</span></li>
+					<li><i class="fa fa-check-circle" aria-hidden="true"></i> <span class="listSingle"> Simple and easy
+							to follow!</span></li>
+					<li><i class="fa fa-check-circle" aria-hidden="true"></i> <span class="listSingle"> Finished
+							projects ready to download and freely used in your portofolio!</span></li>
+					<li><i class="fa fa-check-circle" aria-hidden="true"></i> <span class="listSingle"> Life time
+							access</span></li>
+				</ul>
+
+				<hr>
+
+				<div class="text-center">
+					<img src="images/satisfaction.png" height="120" width="180" alt="satisfaction">
+					<h1>30 DAYS</h1>
+					<p class="star">SATISFACTION GURANTTED</p>
+					<hr>
+					<p class="star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+							aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+					<hr>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+	<footer class="footer">
+		<p class="pt-4">© Turnover | Turnover Programming and Design Courses 2021</p>
+	</footer>
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="js/courses.js"></script>
+	<script src="js/store.js"></script>
+	<script src="js/ui.js"></script>
+	<script src="js/nav.js"></script>
+	<script src="js/order.js"></script>
+</body>
+
+</html>

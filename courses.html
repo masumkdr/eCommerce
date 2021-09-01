@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Masum's eCommerce</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Latest compiled JavaScript -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <script src="background.js"></script> -->
+	<!-- <script src="quotes.js"></script> -->
+</head>
+
+<body style="background-color: #F7F7F7;">
+
+	<div class="container searchDiv">
+		<div class="d-flex justify-content-between">
+			<div class="d-flex row">
+				<div>
+					<div>
+						<div class="dropdown">
+							
+							<div class="btn-group" role="group">
+								<p class="categoryLabel mt-3">Category:</p>
+								<button id="categoryDropdown" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								All</button>
+								<ul class="dropdown-menu categoryMenu" aria-labelledby="categoryDropdown">
+								  <li><a class="dropdown-item" href="#">All</a></li>
+								</ul>
+							  </div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="dropdown">
+						
+						<div class="btn-group" role="group">
+							<p class="authorLabel mt-3">Author:</p>
+							<button id="authorDropdown" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+							All</button>
+							<ul class="dropdown-menu authorMenu" aria-labelledby="authorDropdown">
+							  <li><a class="dropdown-item" href="#">All</a></li>
+							</ul>
+						  </div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="input-group mb-3">
+					<input type="text" class="form-control searchInput" placeholder="Search Courses" aria-label="Search Courses" aria-describedby="button-addon2">
+					<button class="btn btn-outline-secondary searchIcon" type="button" id="button-addon2"><i class="fa fa-search" aria-hidden="true"></i>
+					</button>
+				  </div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container my-5">
+		<div class="row row-cols-1 row-cols-md-3 mt-5 g-4 courseItem">
+		</div>
+	</div>
+
+
+	
+
+	<footer class="footer">
+		<p class="pt-4">© Turnover | Turnover Programming and Design Courses 2021</p>
+	</footer>
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="js/courses.js"></script>
+	<script src="js/store.js"></script>
+	<script src="js/ui.js"></script>
+	<script src="js/nav.js"></script>
+	<script src="js/showCourses.js"></script>
+</body>
+
+</html>

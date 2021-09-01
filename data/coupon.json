@@ -1,0 +1,16 @@
+{
+    "coupons":[
+        {
+            "code": "ABC333",
+            "discount": 10
+        },
+        {
+            "code": "DAY222",
+            "discount": 20
+        },
+        {
+            "code": "END111",
+            "discount": 30
+        }
+    ]
+}
